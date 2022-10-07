@@ -1,31 +1,12 @@
-const actions = Array.from(document.querySelectorAll('[data-action]'));
+var counter = 0;
 
-let counter = localStorage.getItem("counter") || 0;
-
-document.querySelector(".counter-value").innerText = counter;
-
-actions.forEach(action => {
-	action.addEventListener('click', () => {
-		const action_name = action.dataset.action;
-
-		action.classList.add("animate");
-
-		setTimeout(() => {
-			action.classList.remove("animate");
-		}, 1000);
-
-		switch (action_name) {
-			case 'increase':
-				counter++;
-				break;
-			case 'decrease':
-				counter--;
-				break;
-			case 'reset':
-				counter = 0;
-				break;
-		}
-
-		document.querySelector(".counter-value").innerText = counter;
-	});
-});
+function aggiungi(){
+    counter++;
+    document.getElementById("number").innerHTML = counter;
+}
+function sottrai(){;
+    if(counter != 0){
+        counter--
+    }
+    document.getElementById("number").innerHTML = counter;
+}

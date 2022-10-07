@@ -15,17 +15,13 @@
 <body>
     <main>
         <h1>Contatore</h1>
-
-        <div class="counter">
-            <div class="counter-value">0</div>
-            <div class="counter-controls">
-                <button data-action="decrease">
+        <div class="counter" id="counter">
+            <div class="counter-value" id="number">0</div>
+            <div class="counter-controls" id="pulsanti">
+                <button data-action="decrease" onclick="sottrai()">
                     <span class="subtraction operations">—</span>
                 </button>
-                <button data-action="reset">
-                    <span>Reset</span>
-                </button>
-                <button data-action="increase">
+                <button data-action="increase" onclick="aggiungi()">
                     <span class="addition operations">+</span>
                 </button>
             </div>
