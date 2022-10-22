@@ -1,12 +1,22 @@
-var counter = 0;
+// total -> 0
+let total = document.getElementsByClassName("display");
+let incrementBtn = document.getElementById("increment");
+let decrementBtn = document.getElementById("decrement");
 
-function aggiungi(){
-    counter++;
-    document.getElementById("number").innerHTML = counter;
-}
-function sottrai(){;
-    if(counter != 0){
-        counter--
+let counter = 0;
+
+// 
+incrementBtn.addEventListener("click", function (e) {
+    counter = counter + 1;
+    total[0].innerHTML = counter;
+}); 
+
+decrementBtn.addEventListener("click", function (e) {
+    counter = counter - 1;
+
+    if (counter >= 0) {
+        total[0].innerHTML = counter;
+    } else {
+        counter = 0
     }
-    document.getElementById("number").innerHTML = counter;
-}
+});

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vv1lJoqgw8HRgPs0z7En0orky5Ey5W3JUg&usqp=CAU"
@@ -13,22 +16,24 @@
 </head>
 
 <body>
-    <main>
-        <h1>Counter</h1>
-        <div class="counter" id="counter">
-            <div class="counter-value" id="number">0</div>
-            <div class="counter-controls" id="pulsanti">
-                <button data-action="decrease" onclick="sottrai()">
-                    <span class="subtraction operations">—</span>
-                </button>
-                <button data-action="increase" onclick="aggiungi()">
-                    <span class="addition operations">+</span>
-                </button>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-sm-12 text-center">Counter</h1>
+            <div class="counter col-sm-12">
+                <div>
+                    <div class="display col-sm-12 text-center ">0</div>
+                    <div class="col-sm-3"></div>
+                    <button type="button" class="btn-danger col-sm-3" id="decrement">-</button>
+                </div>
+                <div>
+                    <button type="button" class="btn-success col-sm-3" id="increment">+</button>
+                </div>
+                <div class="col-sm-3"></div>
             </div>
         </div>
-    </main>
-
-    <script src="assets/js/script.js"></script>
+    </div>
+    <script src="assets/js/script.js">
+    </script>
 </body>
 
 </html>
