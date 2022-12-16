@@ -13,10 +13,12 @@ btnDec.setAttribute('class','Dec');
 
 let numContainer = document.getElementById("num");
 let value = 0;
+
 btnInc.addEventListener("click", () => {
     value++;
     numContainer.textContent = value;
 });
+
 btnDec.addEventListener("click", () => {
     value--;
     numContainer.textContent = value;
