@@ -5,7 +5,6 @@ btnInc.innerHTML = '+';
 operator.appendChild(btnInc);
 btnInc.style.color = 'green';
 btnInc.setAttribute('class','Inc');
-btnInc.setAttribute('data-counter','inc');
 
 const btnDec = document.createElement('button');
 btnDec.innerHTML = '−';
